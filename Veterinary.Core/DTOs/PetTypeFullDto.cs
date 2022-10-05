@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace Veterinary.Core.DTOs
 {
@@ -14,6 +10,6 @@ namespace Veterinary.Core.DTOs
         //Audit data
         public DateTime dateUpload { get; set; }
         public DateTime dateUpdate { get; set; }
-        public int usuario { get; set; }
+        public int user { get; set; }
     }
 }

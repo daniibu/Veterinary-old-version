@@ -9,14 +9,14 @@ namespace Veterinary.Core.Entities
 {
     public class Pet
     {
-        public int PetId { get; set; }
-        public string? PetName { get; set; }
-        public int ClientId { get; set; }
+        public int petId { get; set; }
+        public string? petName { get; set; }
+        public int clientId { get; set; }
         public int typeId { get; set; }
         //Datos de auditoría.
-        public DateTime DateUpload { get; set; }
-        public DateTime DateUpdate { get; set; }
-        public int User { get; set; }
+        public DateTime dateUpload { get; set; }
+        public DateTime dateUpdate { get; set; }
+        public int user { get; set; }
 
     }
 }

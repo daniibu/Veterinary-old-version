@@ -9,12 +9,12 @@ namespace Veterinary.Core.Entities
 {
     public class Specialty
     {
-        public int SpecialtyId { get; set; }
+        public int specialtyId { get; set; }
         public string? specialty { get; set; }
 
         //Audit Data
-        public DateTime DateUpload { get; set; }
-        public DateTime DateUpdate { get; set; }
+        public DateTime dateUpload { get; set; }
+        public DateTime dateUpdate { get; set; }
         public int user { get; set; }
     }
 }

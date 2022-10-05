@@ -4,24 +4,14 @@ using Veterinary.Infrastructure.Services;
 
 namespace Veterinary.Infraestructure.Services
 {
-    public interface IClientRepository : IRepositoryGeneric<ClientFullDto>
+    public interface IClientRepository : IGenericRepository<ClientFullDto>//Le paso a la clase generica la entidad que va a usar.
     {
-        //Ver muchos clientes:
-        public Task<ClientFullDto> GetClientId (int id);
-        
-        
-
-
-
-
-        //enumerable para mostrar la lista
-        //una coleccion es un conjunto de objetos
-
-        //debe tener los elementos que voy a ejecutar en la base de datos, 
-        //CRUD=mostrar,insertar,modificar,eliminar
-        //los metodos los vamos a crear como tarea: es un hilo que se ejecuta en el procesador
-        //en paralelo con otros procesos que se van ejecutando, cuando creo esto es un proceso
-        //nuevo en el procesador por cada usuario
+        //Cuando se cree un objeto en base a IClientRepository heredará esta propiedad de cliente y todo lo demás de repositorio genérico.
+        //Aquí van unicamente los elementos de clientes, que no son iguales para el resto de entidades
+        public Task<ClientFullDto> GetById(int id);
+        //public Task<ClientFullDto> GetByName(int id);
     }
+
 }
+
 

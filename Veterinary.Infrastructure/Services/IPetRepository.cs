@@ -3,7 +3,7 @@ using Veterinary.Core.DTOs;
 
 namespace Veterinary.Infrastructure.Services
 {
-    public class IPetRepository
+    public interface IPetRepository : IGenericRepository<PetFullDto>
     {
         //Ver muchas mascotas
         public Task<IEnumerable<PetFullDto>> GetAllPet();

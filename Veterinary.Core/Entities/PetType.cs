@@ -9,12 +9,12 @@ namespace Veterinary.Core.Entities
 {
     public class PetType
     {
-        public int TypeId { get; set; }
-        public string? Type { get; set; }
+        public int typeId { get; set; }
+        public string? type { get; set; }
 
         //Audit data
-        public DateTime DateUpload { get; set; }
-        public DateTime DateUpdate { get; set; }
-        public int User { get; set; }
+        public DateTime dateUpload { get; set; }
+        public DateTime dateUpdate { get; set; }
+        public int user { get; set; }
     }
 }

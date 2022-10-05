@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Veterinary.UI.Data;
+using Veterinary.UI.Interfaces;
+using Veterinary.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+
+//Inyección de dependencias del UI
+builder.Services.AddHttpClient<IClientServices>(client =>
+{
+    client.BaseAddress = new Uri(builder.Configuration["apiurl"]);
+});
 
 var app = builder.Build();
 

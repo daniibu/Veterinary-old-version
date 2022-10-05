@@ -9,13 +9,13 @@ namespace Veterinary.Core.Entities
 {
     public class Procedure
     {
-        public int ProcedureId { get; set; }
+        public int procedureId { get; set; }
         public string? procedure { get; set; }
 
         //Audit Data
-        public DateTime DateUpload { get; set; }
-        public DateTime DateUpdate { get; set; }
-        public int User { get; set; }
+        public DateTime dateUpload { get; set; }
+        public DateTime dateUpdate { get; set; }
+        public int user { get; set; }
 
     }
 }

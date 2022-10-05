@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Veterinary.Core.DTOs
 {
-    public class VisitDetailsFullDto
+    public class VisitDetailFullDto
     {
         public int detailId { get; set; }
         public int visitId { get; set; }

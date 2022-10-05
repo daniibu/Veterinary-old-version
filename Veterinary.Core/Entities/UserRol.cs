@@ -9,7 +9,7 @@ namespace Veterinary.Core.Entities
 {
     public class UserRol
     {
-        public int RolId { get; set; }
+        public int rolId { get; set; }
         public string? rol { get; set; }
 
         //Audit Data
